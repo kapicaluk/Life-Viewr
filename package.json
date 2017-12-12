@@ -1,0 +1,23 @@
+{
+  "name": "animal-atlas",
+  "version": "1.0.0",
+  "description": "A new web application for inquisitive minds and fans of National Geographic and Planet Earth. See the wonders of the natural world, and all the life there is to offer with this beautiful, responsive app.  Discover different kinds of animals, plants, and other organisms.  Find and learn about different organisms and their taxonomic relationships.  View breathtaking pictures and galleries of each organis",
+  "main": "app.js",
+  "dependencies": {
+    "animals": "0.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kapicaluk/Life-Viewr.git"
+  },
+  "author": "Lukasz Kapica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kapicaluk/Life-Viewr/issues"
+  },
+  "homepage": "https://github.com/kapicaluk/Life-Viewr#readme"
+}
