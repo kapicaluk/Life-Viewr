@@ -11,8 +11,6 @@ const PORT = process.env.PORT || 8080;
 const app = express();
 module.exports = app;
 
-if (process.env.NODE_ENV !== 'production') require('../secrets');
-
 
 const createApp = () => {
   // logging middleware
@@ -25,22 +23,7 @@ const createApp = () => {
   // compression middleware
   app.use(compression());
 
-  // session middleware with passport
-  app.use(
-    session({
-      secret: process.env.SESSION_SECRET || 'secret',
-      store: sessionStore,
-      resave: false,
-      saveUninitialized: false
-    })
-  );
-  //initialize passport
-  app.use(passport.initialize());
-  //restore session
-  app.use(passport.session());
 
-  // auth and api routes
-  app.use('/auth', require('./auth'));
   app.use('/api', require('./api'));
 
   // static file-serving middleware
